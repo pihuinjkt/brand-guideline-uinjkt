@@ -26,6 +26,7 @@ const FAKULTAS = [
   "Kedokteran",
   "Ilmu Sosial dan Ilmu Politik",
   "Ilmu Kesehatan",
+  "Sekolah Pascasarjana",
 ];
 
 function Page() {
