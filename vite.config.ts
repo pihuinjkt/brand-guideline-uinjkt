@@ -12,4 +12,14 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  // Tambahkan konfigurasi Vite tambahan di bawah ini
+  vite: {
+    optimizeDeps: {
+      include: ['@tanstack/react-query', '@tanstack/query-core'],
+    },
+    ssr: {
+      // Memaksa Vite untuk membundel query-core ke dalam hasil build server (Cloudflare Workers)
+      noExternal: ['@tanstack/react-query', '@tanstack/query-core'],
+    },
+  },
 });
