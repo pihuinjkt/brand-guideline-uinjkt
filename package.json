@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "preview": "vite preview",
+    "preview": "wrangler pages dev ./dist/client",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
